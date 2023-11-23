@@ -1,18 +1,79 @@
-h1{
-    color: black;
-    margin-right: 85%;
-}
-
 *{
     margin: 0;
-    background-color: gray;
 }
-p{
-    text-align: right;
+.top{
+    display: flex;
+    background-color: #33475d;
+}
+.box1{
+    margin: 20px 0;
+}
+.box2{
     color: red;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: left;
 }
-layer{
-    width: 50%;
-    background-color: black;
+
+body{
+    background-color: white;
+}
+.layer{
+    display: flex;
+}
+.hobbies{
+    background: white;
+    border-left: 1px solid white;
+    margin-top: 40px;
+    text-align: left;
+}
+.imgbox{
+    margin: 40px 150px;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.anim{
+    animation-name: my-design;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+@keyframes my-design {
+    from {
+        background-color: #33475b;
+        width: 300px;
+        top: 500px;
+    }
+    to{
+        background-color: #ff7a59;
+        width: 50px;
+        top: 600px;
+    }
     
+}
+.layer2{
+    display: flex;
+    background-color: #33475b;
+    margin-top: 200px;
+    margin-right: 0;
+    margin-left: 0;
+}
+.innerlayer1{
+    margin: auto auto;
+}
+.down{
+    color:#ff7a59;
+    background-color: black;
 }
